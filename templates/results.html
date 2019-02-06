@@ -1,0 +1,50 @@
+{% for quote in quotes %}
+    <div class="card">
+        <div class="card-body">
+            {% if session['user_id'] == quote.user_id %}
+            <a href="{{url_for('deletequote', quote_id = quote.id)}}" class="btn btn-danger delete">Delete</a>
+            {% endif %}
+            <h5 class="card-title">{{quote.content}}</h5>
+            <a href="{{url_for('user_quotes', user_id = quote.user_id)}}" class="card-link">{{quote.id_film}}</a>
+        </div>
+    </div>
+{% endfor %}
+
+
+
+<div class="row">
+
+
+{% for film in films %}
+    <div class="col-md-4">
+        <div class="card" style="margin-bottom:20px;">
+            <img class="img-fluid" src="{{film.image}}" alt="Card image cap">
+            <div class="card-body">
+                <h4>{{film.name}}</h4>
+                {% if session['user_id']%}
+                    {% if film.id in liked %}
+                    <a href="{{url_for('dislike', film_id = film.id, user_id = session['user_id'])}}">Dislike</a>
+                    {% else %}
+                    <a href="{{url_for('like', film_id = film.id)}}">like</a>
+                    {%endif%}
+                {%endif%}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+
+{% for like in likes %}
+    <div class="col-md-4">
+        <div class="card" style="margin-bottom:20px;">
+            <img class="img-fluid" src="{{like.film.image}}" alt="Card image cap">
+            <div class="card-body">
+                <h4>{{like.film.name}}</h4>
+              <a href="{{url_for('dislike', film_id = like.film_id, user_id = like.user_id)}}">Dislike</a>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+
+</div>

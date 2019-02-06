@@ -1,0 +1,159 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+{
+font-family:'Source Sans Pro', sans-serif;
+}
+
+/* Calendar Icon - Don't Change or Remove */
+i.fa
+{
+font: normal normal normal 14px/1 FontAwesome !important;
+}
+
+/* Hotel Name Font */
+
+.page-header-inner .hotel_name {
+color: #fff;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+.page-breadcrumb li.active>span{
+    background: rgb(47,58,29)
+}
+.page-breadcrumb li>span{
+    background: rgba(47, 58, 29, .5)
+}
+.page-bar .page-breadcrumb>li>span .numberCircle{
+    color: #aaa;
+}
+.page-breadcrumb li.active>span:after{
+    border-left: 30px solid rgb(47,58,29);
+}
+.page-header.navbar{
+    background-color: #f6f5f5;
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: right 50% bottom 20%;
+}
+.page-header-inner .hotel_name{
+    color: transparent;
+}
+#lang_currency_switchers {
+    margin-right: 0;
+}
+.btn-warning {
+    color: #fff;
+    transition: background 0.4s ease, box-shadow 0.2s ease;
+    background: rgb(47,58,29);
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active{
+    background: rgb(47,58,29);
+}
+.check_availability_group .btn:not(.btn-outline):focus{
+    background-color: rgb(47,58,29);
+}
+.rooms_select .btn, .rooms_select.open .btn, .rooms_select .btn:hover, .rooms_select .btn:focus, .rooms_select .btn:active{
+    transition: background 0.4s ease, box-shadow 0.2s ease;
+    background: rgb(47,58,29);
+}
+.btn.green:not(.btn-outline):focus, .roomtype .bootstrap-select.rooms_select .btn:focus{
+    background-color: rgb(47,58,29);
+    border-color: rgb(47,58,29);
+}
+
+.ui-datepicker .ui-state-checkin, .ui-datepicker .ui-state-checkin .ui-state-default, .ui-datepicker .ui-state-checkout, .ui-datepicker .ui-state-checkout .ui-state-default {
+    background: rgba(47,58,29, 0.7);
+    color: #fff;
+}
+.green.btn.disabled, .green.btn.disabled:hover, .green.btn.disabled:focus, .green.btn.disabled:active, .green.btn.disabled.active, .green.btn[disabled], .green.btn[disabled]:hover, .green.btn[disabled]:focus, .green.btn[disabled]:active, .green.btn[disabled].active, fieldset[disabled] .green.btn, fieldset[disabled] .green.btn:hover, fieldset[disabled] .green.btn:focus, fieldset[disabled] .green.btn:active, fieldset[disabled] .green.btn.active{
+    background-color: rgba(47,58,29, .5);
+}
+.green.btn{
+    background-color: rgb(47,58,29);
+    transition: background 0.4s ease, box-shadow 0.2s ease;
+}
+.green.btn:hover, .green.btn:focus, .green.btn:active, .green.btn.active{
+    background-color: #f6a737
+}
+.green.btn:active:hover, .green.btn.active:hover{
+    background-color: rgb(47,58,29);
+}
+.ui-datepicker .ui-state-range, .ui-datepicker .ui-state-range .ui-state-default {
+    background: rgba(47,58,29, 0.25);
+    color: #fff;
+}
+
+.selected_rooms_price{
+    color: black;
+}
+
+.lf-icon{
+    background: url(https://www.outpost-asia.com/site/templates/assets/icon/favicon-96x96.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+.name_room {
+    color: rgba(47,58,29, .75);
+    text-decoration: none !important;
+    transition: color 0.4s ease;
+}
+.page-header.navbar .container {
+    margin-bottom: 40px
+}
+.page-bar{
+    margin-top: 10px;
+}
+.galleria-theme-classic{
+    background: transparent;
+}
+.popup{
+    background-color: transparent;
+    border: none;
+}
+.galleria-theme-classic img{
+    border-radius: 10px;
+    box-shadow: 0 24px 38px rgba(0,0,0,0.4), 0 20px 20px rgba(0,0,0,0.4);
+}
+.galleria-theme-classic .galleria-thumbnails .galleria-image{
+    background: transparent;
+    border: none;
+}
+.galleria_popup .close_popup, .room_gallery_popup .close_popup{
+    right:30px;
+    background-color: transparent; 
+}
+.legend_booking .today{
+    background: rgb(47,58,29);
+    border: 1px solid rgb(47,58,29);
+}
+.logo_area{
+    width: 180px;
+    margin-bottom: -50px;
+}
+.reservations_terms_conditions h2{
+    font-size: 1.8em;
+    color: rgb(47,58,29);
+}
+.reservations_terms_conditions h2 a{
+    color: rgb(47,58,29);
+}
+.popup.alert {
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4), 0 10px 20px rgba(0,0,0,0.4);
+    background: rgba(255,255,255,1);
+    border-radius: 10px;
+}
+
+@media screen and (max-device-width: 812px){
+    .logo_area{
+        width: 180px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .page-header-inner h2, .page-header-inner .margin-left-160{
+        margin-top: 0px;
+    }
+}
+</style>

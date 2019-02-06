@@ -1,0 +1,265 @@
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+    {
+    font-family:'Source Sans Pro', sans-serif;
+    }
+    
+    /* Calendar Icon - Don't Change or Remove */
+    i.fa
+    {
+    font: normal normal normal 14px/1 FontAwesome !important;
+    }
+    
+    /* Hotel Name Font */
+    
+    .page-header-inner .hotel_name {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    
+    
+    .page-breadcrumb li.active>span{
+        background: rgb(47,58,29)
+    }
+    .page-breadcrumb li>span{
+        background: rgba(47, 58, 29, .5)
+    }
+    .page-bar .page-breadcrumb>li>span .numberCircle{
+        color: #aaa;
+    }
+    .page-breadcrumb li.active>span:after{
+        border-left: 30px solid rgb(47,58,29);
+    }
+    .page-header.navbar{
+        background-color: #f6f5f5;
+        background-size: 220px;
+        background-repeat: no-repeat;
+        background-position: right 50% bottom 20%;
+    }
+    .page-header-inner .hotel_name{
+        color: transparent;
+    }
+    #lang_currency_switchers {
+        margin-right: 0;
+    }
+    .btn-warning {
+        color: #fff;
+        transition: background 0.4s ease, box-shadow 0.2s ease;
+        background: rgb(47,58,29);
+    }
+    .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active{
+        background: rgb(47,58,29);
+    }
+    .check_availability_group .btn:not(.btn-outline):focus{
+        background-color: rgb(47,58,29);
+    }
+    .rooms_select .btn, .rooms_select.open .btn, .rooms_select .btn:hover, .rooms_select .btn:focus, .rooms_select .btn:active{
+        transition: background 0.4s ease, box-shadow 0.2s ease;
+        background: rgb(47,58,29);
+    }
+    .btn.green:not(.btn-outline):focus, .roomtype .bootstrap-select.rooms_select .btn:focus{
+        background-color: rgb(47,58,29);
+        border-color: rgb(47,58,29);
+    }
+    
+    .ui-datepicker .ui-state-checkin, .ui-datepicker .ui-state-checkin .ui-state-default, .ui-datepicker .ui-state-checkout, .ui-datepicker .ui-state-checkout .ui-state-default {
+        background: rgba(47,58,29, 0.7);
+        color: #fff;
+    }
+    .green.btn.disabled, .green.btn.disabled:hover, .green.btn.disabled:focus, .green.btn.disabled:active, .green.btn.disabled.active, .green.btn[disabled], .green.btn[disabled]:hover, .green.btn[disabled]:focus, .green.btn[disabled]:active, .green.btn[disabled].active, fieldset[disabled] .green.btn, fieldset[disabled] .green.btn:hover, fieldset[disabled] .green.btn:focus, fieldset[disabled] .green.btn:active, fieldset[disabled] .green.btn.active{
+        background-color: rgba(47,58,29, .5);
+    }
+    .green.btn{
+        background-color: rgb(47,58,29);
+        transition: background 0.4s ease, box-shadow 0.2s ease;
+    }
+    .green.btn:hover, .green.btn:focus, .green.btn:active, .green.btn.active{
+        background-color: #f6a737
+    }
+    .green.btn:active:hover, .green.btn.active:hover{
+        background-color: rgb(47,58,29);
+    }
+    .ui-datepicker .ui-state-range, .ui-datepicker .ui-state-range .ui-state-default {
+        background: rgba(47,58,29, 0.25);
+        color: #fff;
+    }
+    
+    .selected_rooms_price{
+        color: black;
+    }
+    
+    .lf-icon{
+        background: url(https://www.outpost-asia.com/site/templates/assets/icon/favicon-96x96.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+    .name_room {
+        color: rgba(47,58,29, .75);
+        text-decoration: none !important;
+        transition: color 0.4s ease;
+    }
+    .page-header.navbar .container {
+        margin-bottom: 40px
+    }
+    .page-bar{
+        margin-top: 10px;
+    }
+    .galleria-theme-classic{
+        background: transparent;
+    }
+    .popup{
+        background-color: transparent;
+        border: none;
+    }
+    .galleria-theme-classic img{
+        border-radius: 10px;
+        box-shadow: 0 24px 38px rgba(0,0,0,0.4), 0 20px 20px rgba(0,0,0,0.4);
+    }
+    .galleria-theme-classic .galleria-thumbnails .galleria-image{
+        background: transparent;
+        border: none;
+    }
+    .galleria_popup .close_popup, .room_gallery_popup .close_popup{
+        right:30px;
+        background-color: transparent; 
+    }
+    .legend_booking .today{
+        background: rgb(47,58,29);
+        border: 1px solid rgb(47,58,29);
+    }
+    .logo_area{
+        width: 180px;
+        margin-bottom: -50px;
+    }
+    .reservations_terms_conditions h2{
+        font-size: 1.8em;
+        color: rgb(47,58,29);
+    }
+    .reservations_terms_conditions h2 a{
+        color: rgb(47,58,29);
+    }
+    .popup.alert {
+        box-shadow: 0 8px 18px rgba(0,0,0,0.4), 0 10px 20px rgba(0,0,0,0.4);
+        background: rgba(255,255,255,1);
+        border-radius: 10px;
+    }
+    
+    
+    .item_box .image_frame .more_photos, .item_box .view_details, .more_details_box .sub_menu .selected a{
+            color: rgb(47,58,29)
+        }
+        .dk, .dk2, #cboxContent{
+            background-color: transparent;
+            border: none;
+        }
+        .cboxPhoto{
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.4), 0 3px 13px rgba(0,0,0,0.4)
+        }
+        #cboxSlideshow{
+            background: none;
+        }
+        #cboxNext, #cboxPrevious{
+            background: transparent;
+        }
+        #cboxNext:hover span, #cboxPrevious:hover span{
+            color: rgb(47,58,29) !important;
+        }
+        #cboxContent #cboxNext span, #cboxContent #cboxPrevious span{
+            transition: color 0.3s ease;
+            color: #fff;
+            text-shadow: 0 0px 18px rgba(0,0,0,0.4), 0 8px 12px rgba(0,0,0,0.4);
+        }
+        .next_img, #cboxNext:hover .next_img, .prev_img, #cboxPrevious:hover .prev_img{
+            background: none;
+            color: #fff;
+        }
+        #cboxCurrent{
+            color: #fff;
+            text-shadow: 0 0px 18px rgba(0,0,0,0.4), 0 8px 12px rgba(0,0,0,0.4);
+        }
+
+        .item_box .image_frame, .item_box, .item_box .image_frame img, .item_box .image_frame .image_hover{
+            border-radius: 12px;
+        }
+        .item_box{
+            border-bottom: 1px solid #e1e1e1;
+        }
+        .item_box .image_frame img{
+            box-shadow: 0 3px 8px rgba(0,0,0,0.4), 0 3px 4px rgba(0,0,0,0.4);
+        }
+        .item_box .view_details{
+            box-shadow: 0 3px 10px rgba(0,0,0,0.4), 0 115px 1px rgba(0,0,0,0.4);
+        }
+        .more_details_box{
+            border-radius: 0px 0px 12px 12px;
+        }
+        .more_details_box .sub_menu li a{
+            color: #6c7a89;
+        }
+        .listing .logo{
+            background: #f6f5f5 none repeat scroll 0 0 !important;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.4), 0 3px 4px rgba(0,0,0,0.4);
+            border-radius: 20px;
+            padding: 0;
+        }
+        .item_box .info p{
+            font-size: 1.1em;
+            letter-spacing: 0.4px;
+        }
+        .item_box .info span{
+            font-size: 1.3em;
+        }
+        .listing .hotel_views img{
+            border: none;
+        }
+        .hotel_views a[rel="gallery"]{
+            box-shadow: 0 3px 8px rgba(0,0,0,0.4), 0 3px 4px rgba(0,0,0,0.4);
+            border-radius: 12px;
+        }
+        .listing .hotel_views img, .room_image{
+            border-radius: 12px;
+        }
+        .logo_homepage{
+            width: 30%;
+            display: block;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+    @media screen and (max-device-width: 812px){
+        .logo_area{
+            width: 130px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .page-header-inner h2, .page-header-inner .margin-left-160{
+            margin-top: 0px;
+        }
+        .price_box{
+            float: left;
+        }
+        .price_box .starting_from, .price_box .not_available{
+            text-align: left;
+        }
+        .price_box .min_price{
+            text-align: left;
+        }
+        .logo_homepage{
+            width: 50%;
+        }
+    }
+    </style>
+
+
+<script>
+var elem = document.createElement("img");
+elem.src = "https://www.outpost-asia.com/site/assets/files/1015/logo_black_transparent.1000x0.png";
+elem.className = "logo_homepage";
+var c =document.getElementsByClassName("container")[0].parentNode;
+var c2 =document.getElementsByClassName("container")[0];
+c.insertBefore(elem, c2)
+</script>
